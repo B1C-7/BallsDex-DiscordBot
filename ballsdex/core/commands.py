@@ -61,8 +61,7 @@ class Core(commands.Cog):
         """
         Reload the cache of database models.
 
-        This is needed each time the database is updated, otherwise changes won't reflect until
-        next start.
+        This is necessary each time the database is updated. Otherwise, changes won't be reflected until the next start.
         """
         await self.bot.load_cache()
         await ctx.message.add_reaction("✅")
